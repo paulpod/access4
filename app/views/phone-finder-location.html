@@ -33,6 +33,7 @@
       
 
         <div id="services" class="">
+          <form class="form" action="/location" method="get" >
 
           <p class="phone-bodytext"><strong>Where should the patient be seen?</strong></p>
 
@@ -42,7 +43,9 @@
             <h2 class="phone-bodytext">or enter a postcode:</h2>
             <input class="postcode" name="location" placeholder="eg. OX27 7QR or EC1" style="width: 220px;padding-left: 10px;" />
 
-            <a href="phone-finder-location-confirm"><button class="phone-findloc">Find</button></a>
+            <!--<a href="phone-finder-location-confirm"><button class="phone-findloc">Find</button></a>-->
+
+            <input class="phone-findloc" type="submit" value="Find">
 
             <p class="phone-bodytext" id="reported-place" style="margin: 1em 0 -0.5em 0">&nbsp;</p>
 
