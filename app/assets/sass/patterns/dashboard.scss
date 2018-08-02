@@ -1,0 +1,113 @@
+/* Custom styles for the analytics, admin and dashboard pages */
+
+
+.dash-ball {
+		text-align: center;
+}
+
+@media (min-width: 768px) {
+	#dashboard-summary .dash-ball {
+		width:400px;
+		height: 400px;
+		border-radius: 200px;
+		float: left;
+		margin-right: 30px
+	}
+	#dashboard-summary .dash-label {
+		font-weight: 600;
+		font-size:1.8em;
+		margin-top: 2em;
+	}
+	#dashboard-summary .dash-value {
+		font-weight: 600;
+		font-size:6em;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	#dashboard-summary .dash-ball {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+		float: left;
+		margin-right: 10px
+	}
+}
+
+#dash-today {
+	background-color: #f0d033;
+}
+
+#dash-month {
+	background-color: #77ccff;
+}
+
+#dashboard-summary:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#dashboard-details ul {
+	width: 60%;
+	border-top: 1px solid #aaa;
+}
+#dashboard-details ul li {
+	border-bottom: 1px solid #aaa;
+	padding: 0.3em 0 0.3em 1em;
+
+}
+
+.dash-date {
+	display: inline-block;
+	width: 7.5em;
+	font-weight: 600;
+}
+.dash-day {
+	display: inline-block;
+	color: #555;
+	width: 4.5em;
+}
+.dash-data {
+	display: inline-block;
+	width: 7.5em;
+	font-weight: 600;
+}
+.dash-data:after {
+	content: " users";
+}
+
+
+@media (min-width: 768px) {
+	#dashboard-mini .dash-ball {
+		width:150px;
+		height: 150px;
+		border-radius: 75px;
+		float: left;
+		margin-right: 80px
+	}
+	#dashboard-mini .dash-label {
+		font-weight: 600;
+		font-size:1em;
+		margin-top: 1.5em;
+		margin-bottom: 0.2em;
+	}
+	#dashboard-mini .dash-value {
+		font-weight: 600;
+		font-size:2.5em;
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	#dashboard-mini .dash-ball {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+		float: left;
+		margin-right: 10px
+	}
+}
