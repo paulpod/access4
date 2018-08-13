@@ -34,15 +34,19 @@
 
 
 
-          <div id="dashboard-summary" class="more-data-1">
+          <!-- - - - - first row for the service search -->
 
-            <div class="dash-ball" id="dash-today">
+          <div id="dashboard-summary-s1" class="more-data-1">
+
+            <h2 class="heading-medium">Searches by service type</h2>
+
+            <div class="dash-ball" id="dash-today-s1">
               <p class="dash-label">today</p>
 
               <p class="dash-value">210</p>
             </div>
 
-            <div class="dash-ball" id="dash-month">
+            <div class="dash-ball" id="dash-month-s1">
               <p class="dash-label">last 31 days</p>
 
               <p class="dash-value">6,212</p>
@@ -50,7 +54,40 @@
               
               <div class="more-data-1 show-button">
           
-                <a href="javascript:toggleDiv('more-data-1');" >
+                
+                  <span id="showdata1">Show all days</span>
+                
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <br clear="all">
+
+          <!-- - - - - the second row for the known/named service -->
+
+          <div id="dashboard-summary-s2" class="more-data-2">
+
+            <h2 class="heading-medium">Searches for a named service</h2>
+
+            <div class="dash-ball" id="dash-today-s2">
+              <p class="dash-label">today</p>
+
+              <p class="dash-value">420</p>
+            </div>
+
+            <div class="dash-ball" id="dash-month-s2">
+              <p class="dash-label">last 31 days</p>
+
+              <p class="dash-value">11,176</p>
+
+              
+              <div class="show-button">
+          
+                <a href="" onclick="explode()">
                   Show all days
                 </a>
 
@@ -61,6 +98,82 @@
 
           </div>
 
+
+
+          <div class="histogram" id="histo-1">
+
+            <table>
+
+              <tr id="day-row">
+                <td>W</td>
+                <td>T</td>
+                <td>M</td>
+                <td>S</td>
+                <td>S</td>
+                <td>F</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>M</td>
+                <td>S</td>
+                <td>S</td>
+                <td>F</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>M</td>
+                <td>S</td>
+                <td>S</td>
+                <td>F</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>M</td>
+                <td>S</td>
+                <td>S</td>
+                <td>F</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>M</td>
+              </tr>
+
+              <tr id="date-row">
+                <td>31</td>
+                <td>30</td>
+                <td>29</td>
+                <td>28</td>
+                <td>27</td>
+                <td>26</td>
+                <td>25</td>
+                <td>24</td>
+                <td>23</td>
+                <td>22</td>
+                <td>21</td>
+                <td>20</td>
+                <td>19</td>
+                <td>18</td>
+                <td>17</td>
+                <td>16</td>
+                <td>15</td>
+                <td>14</td>
+                <td>13</td>
+                <td>12</td>
+                <td>11</td>
+                <td>10</td>
+                <td>09</td>
+                <td>08</td>
+                <td>07</td>
+                <td>06</td>
+                <td>05</td>
+                <td>04</td>
+                <td>03</td>
+                <td>02</td>
+                <td>01</td>
+              </tr>
+            </table>
+
+          </div>
 
 
 

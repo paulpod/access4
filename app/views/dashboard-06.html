@@ -1,0 +1,90 @@
+{% extends "minimal-layout.html" %}
+
+{% block page_title %}
+  NHS Service finder
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+  .box img {
+    margin-left:0;
+    transition: all 1s;
+  }
+  .moved {
+    margin-left: 500px;
+  }
+</style>
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+
+  <div id="dashboard-page" class="brandedpage">
+
+    <div id="branded-header">
+      <h1>Service Finder</h1>
+
+    </div>
+
+
+    <div id="dashboard-head">
+      <h2 class="heading-large container">Data dashboard</h2>
+
+      <p class="phone-bodytext ">
+      Showing data for all Service Finder users from 1 July 2018 to 1 August 2018.</p>
+    </div>
+
+    <div id="controller">
+
+      <input type="checkbox" name="toggle" id="toggle" />
+      <label for="toggle"></label>
+
+    </div>
+
+
+    <div id="dashboard-summary" class="container">
+ 
+      <div class="dash-ball " id="dash-today">
+        <p class="dash-label">today</p>
+
+        <p class="dash-value">210</p>
+      </div>
+
+      <div class="dash-ball" id="dash-month">
+        <p class="dash-label">last 31 days</p>
+
+        <p class="dash-value">6,212</p>
+      </div>
+
+    </div>
+
+
+    <div class="box">
+      <img id="move" src="http://placekitten.com/200/300" alt="Pic" />
+    </div>
+
+
+
+
+    <p style="padding:2em 0 10em 0">Data correct at 18:00 01 August 2018</p> 
+            
+
+</main>
+
+
+<script type="text/javascript">
+  (function () {
+    var move = document.getElementById('move');
+
+    move.onclick = function () {
+      this.toggleClass('moved');
+        }
+    };
+})();
+</script>
+
+
+{% endblock %}
+
+

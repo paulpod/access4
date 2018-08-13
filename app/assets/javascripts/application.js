@@ -37,3 +37,10 @@ $('.clickMe').toggle(
       $('#' + $(this).attr('for')).hide();
       $(this).text('show');
 });
+
+
+$(document).ready(function(){
+    $("#showdata1").click(function(){
+        $("#dash-today-s1").width(100).height(100);
+    });
+});
